@@ -1,0 +1,432 @@
+<!doctype html>
+<!--[if lt IE 7]>		<html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
+<!--[if IE 7]>			<html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
+<!--[if IE 8]>			<html class="no-js lt-ie9" lang=""> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="">
+<!--<![endif]-->
+
+<!-- Mirrored from exprostudio.com/html/book_library/ by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 28 Aug 2018 23:44:14 GMT -->
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>BootStrap HTML5 CSS3 Theme</title>
+	<meta name="description" content="">
+	<meta name="viewport" content="/static/width=device-width, initial-scale=1">
+	<link rel="apple-touch-icon" href="/static/apple-touch-icon.png">
+	<link rel="stylesheet" href="/static/css/bootstrap.min.css">
+	<link rel="stylesheet" href="/static/css/normalize.css">
+	<link rel="stylesheet" href="/static/css/font-awesome.min.css">
+	<link rel="stylesheet" href="/static/css/icomoon.css">
+	<link rel="stylesheet" href="/static/css/jquery-ui.css">
+	<link rel="stylesheet" href="/static/css/owl.carousel.css">
+	<link rel="stylesheet" href="/static/css/transitions.css">
+	<link rel="stylesheet" href="/static/css/main.css">
+	<link rel="stylesheet" href="/static/css/color.css">
+	<link rel="stylesheet" href="/static/css/responsive.css">
+	<script src="/static/js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+</head>
+
+<body class="tg-home tg-homeone">
+	<!--[if lt IE 8]>
+		<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+	<![endif]-->
+	<!--************************************
+			Wrapper Start
+	*************************************-->
+	<div id="tg-wrapper" class="tg-wrapper tg-haslayout">
+		<!--************************************
+				Header Start
+		*************************************-->
+		<%- include ./components/header%>
+		<!--************************************
+				Header End
+		*************************************-->
+		<!--************************************
+				Home Slider Start
+		*************************************-->
+		<div id="tg-homeslider" class="tg-homeslider tg-haslayout owl-carousel">
+			<!-- ảnh thứ nhất -->
+			<div class="item" data-vide-bg="poster: images/slider/img-01.jpg" data-vide-options="position: 0% 50%">
+				<div class="container">
+					<div class="row">
+						<div class="col-xs-12 col-sm-12 col-md-10 col-md-push-1 col-lg-8 col-lg-push-2">
+							<div class="tg-slidercontent">
+								<figure class="tg-authorimg"><a href="javascript:void(0);"><img src="/static/images/13.png" alt="image description"></a></figure>
+								<h1>Thông tin nhóm</h1>
+								<h2>Latest 2018 Release</h2>
+								<div class="tg-description">
+									<p>Consectetur adipisicing elit sed do eiusmod tempor incididunt ut labore tolore magna aliqua. Ut enim ad
+										minim veniam, quis nostrud exercitation ullamcoiars nisi ut aliquip commodo.</p>
+								</div>
+								<div class="tg-btns">
+									<a class="tg-btn" href="/aboutus">About us</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- ảnh thứ hai -->
+			<div class="item" data-vide-bg="poster: images/slider/img-01.jpg" data-vide-options="position: 0% 50%">
+				<div class="container">
+					<div class="row">
+						<div class="col-xs-12 col-sm-12 col-md-10 col-md-push-1 col-lg-8 col-lg-push-2">
+							<div class="tg-slidercontent">
+								<figure class="tg-authorimg"><a href="javascript:void(0);"><img src="/static/images/13.png" alt="image description"></a></figure>
+								<h1>Thông tin nhóm</h1>
+								<h2>Latest 2018 Release</h2>
+								<div class="tg-description">
+									<p>Consectetur adipisicing elit sed do eiusmod tempor incididunt ut labore tolore magna aliqua. Ut enim ad
+										minim veniam, quis nostrud exercitation ullamcoiars nisi ut aliquip commodo.</p>
+								</div>
+								<div class="tg-btns">
+									<a class="tg-btn" href="/aboutus">About us</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--************************************
+				Home Slider End
+		*************************************-->
+		<!--************************************
+				Main Start
+		*************************************-->
+		<main id="tg-main" class="tg-main tg-haslayout">
+			<!--************************************
+					All Status Start
+			*************************************-->
+			<section class="tg-haslayout">
+				<div class="container">
+					<div class="row">
+						<div class="tg-allstatus">
+							<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+								<div class="tg-parallax tg-bgbookwehave" data-z-index="2" data-appear-top-offset="600" data-parallax="scroll"
+								 data-image-src="/static/images/parallax/bgparallax-01.jpg">
+									<div class="tg-status">
+										<div class="tg-statuscontent">
+											<span class="tg-statusicon"><i class="icon-book"></i></span>
+											<h2>Books we have<span>
+													<%= Math.floor(data.totalBook / 1000) %>,
+													<%= data.totalBook % 1000 %>
+												</span>
+											</h2>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+								<div class="tg-parallax tg-bgtotalmembers" data-z-index="2" data-appear-bottom-offset="600" data-parallax="scroll"
+								 data-image-src="/static/images/parallax/bgparallax-02.jpg">
+									<div class="tg-status">
+										<div class="tg-statuscontent">
+											<span class="tg-statusicon"><i class="icon-user"></i></span>
+											<h2>
+												Total members
+												<span>
+													<%= data.totalUser%>
+												</span>
+											</h2>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+								<div class="tg-parallax tg-bghappyusers" data-z-index="2" data-appear-top-offset="600" data-parallax="scroll"
+								 data-image-src="/static/images/parallax/bgparallax-03.jpg">
+									<div class="tg-status">
+										<div class="tg-statuscontent">
+											<span class="tg-statusicon"><i class="icon-heart"></i></span>
+											<h2>Happy users<span>1,267,539</span></h2>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!--************************************
+					All Status End
+			*************************************-->
+			<!--************************************
+					Best Selling Start
+			*************************************-->
+			<section class="tg-sectionspace tg-haslayout">
+				<div class="container">
+					<div class="row">
+						<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+							<div class="tg-sectionhead">
+								<h2><span>People’s Choice</span>Bestselling Books</h2>
+								<a class="tg-btn" href="/products">View All</a>
+							</div>
+						</div>
+						<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+							<div id="tg-bestsellingbooksslider" class="tg-bestsellingbooksslider tg-bestsellingbooks owl-carousel">
+								<% let srcl = ['/static/images/books/img-01.jpg','/static/images/books/img-02.jpg', '/static/images/books/img-03.jpg',  '/static/images/books/img-04.jpg', '/static/images/books/img-05.jpg', '/static/images/books/img-06.jpg', '/static/images/books/img-07.jpg', '/static/images/books/img-08.jpg', '/static/images/books/img-10.jpg', '/static/images/books/img-11.jpg', '/static/images/books/img-12.jpg' ]; %>
+								<% if (data && data.products) {%>
+								<% for (let i = 0; i < 10; i++) {%>
+								<div class="item">
+									<div class="tg-postbook tg-notag">
+										<figure class="tg-featureimg">
+											<div class="tg-bookimg">
+												<div class="tg-frontcover">
+													<img src=<%=srcl[Math.floor(Math.random()*11)]%> alt=
+													<%=srcl[Math.floor(Math.random()*12)]%>>
+												</div>
+												<div class="tg-backcover">
+													<img src=<%=srcl[Math.floor(Math.random()*11)]%> alt=
+													<%=srcl[Math.floor(Math.random()*12)]%>>
+												</div>
+											</div>
+											<a class="tg-btnaddtowishlist" href="javascript:void(0);">
+												<i class="icon-heart"></i>
+												<span>add to wishlist</span>
+											</a>
+										</figure>
+
+										<div class="tg-postbookcontent">
+											<ul class="tg-bookscategories">
+												<li>
+													<a href="/products/<%= data.products[i].ma_the_loai %>">
+														<%= data.products[i].ten_the_loai %>
+													</a>
+												</li>
+											</ul>
+											<div class="tg-booktitle">
+												<h3>
+													<a href="/product/<%= data.products[i].ma_sach %>">
+														<%= data.products[i].ten_sach %>
+													</a>
+												</h3>
+											</div>
+											<span class="tg-bookwriter">By:
+												<a href="javascript:void(0);">
+													<%= data.products[i].tac_gia %>
+												</a>
+											</span>
+											<span class="tg-stars"><span></span></span>
+											<span class="tg-bookprice">
+												<ins>
+													<%= Math.floor(data.products[i].gia_ban/1000) %>.000 ₫
+												</ins>
+											</span>
+										</div>
+									</div>
+								</div>
+								<% } %>
+								<% } %>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!--************************************
+					Best Selling End
+			*************************************-->
+
+			<!--************************************
+					Collection Count Start
+			*************************************-->
+			<section class="tg-parallax tg-bgcollectioncount tg-haslayout" data-z-index="-100" data-appear-top-offset="600"
+			 data-parallax="scroll" data-image-src="/static/images/parallax/bgparallax-04.jpg">
+				<div class="tg-sectionspace tg-collectioncount tg-haslayout">
+					<div class="container">
+						<div class="row">
+							<div id="tg-collectioncounters" class="tg-collectioncounters">
+								<div class="tg-collectioncounter tg-drama">
+									<div class="tg-collectioncountericon">
+										<i class="icon-bubble"></i>
+									</div>
+									<div class="tg-titlepluscounter">
+										<h2>Drama</h2>
+										<h3 data-from="0" data-to="6179213" data-speed="8000" data-refresh-interval="50">6,179,213</h3>
+									</div>
+								</div>
+								<div class="tg-collectioncounter tg-horror">
+									<div class="tg-collectioncountericon">
+										<i class="icon-heart-pulse"></i>
+									</div>
+									<div class="tg-titlepluscounter">
+										<h2>Horror</h2>
+										<h3 data-from="0" data-to="3121242" data-speed="8000" data-refresh-interval="50">3,121,242</h3>
+									</div>
+								</div>
+								<div class="tg-collectioncounter tg-romance">
+									<div class="tg-collectioncountericon">
+										<i class="icon-heart"></i>
+									</div>
+									<div class="tg-titlepluscounter">
+										<h2>Romance</h2>
+										<h3 data-from="0" data-to="2101012" data-speed="8000" data-refresh-interval="50">2,101,012</h3>
+									</div>
+								</div>
+								<div class="tg-collectioncounter tg-fashion">
+									<div class="tg-collectioncountericon">
+										<i class="icon-star"></i>
+									</div>
+									<div class="tg-titlepluscounter">
+										<h2>Fashion</h2>
+										<h3 data-from="0" data-to="1158245" data-speed="8000" data-refresh-interval="50">1,158,245</h3>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!--************************************
+					Collection Count End
+			*************************************-->
+			<!--************************************
+					Authors Start
+			*************************************-->
+			<section class="tg-sectionspace tg-haslayout">
+				<div class="container">
+					<div class="row">
+						<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+							<div class="tg-sectionhead">
+								<h2><span>Strong Minds Behind Us</span>Most Popular Authors</h2>
+								<a class="tg-btn" href="/products">View All</a>
+							</div>
+						</div>
+						<div id="tg-authorsslider" class="tg-authors tg-authorsslider owl-carousel">
+							<div class="item tg-author">
+								<figure><a href="javascript:void(0);"><img src="/static/images/author/imag-03.jpg" alt="image description"></a></figure>
+								<div class="tg-authorcontent">
+									<h2><a href="javascript:void(0);">Jude Morphew</a></h2>
+									<span>21,658 Published Books</span>
+									<ul class="tg-socialicons">
+										<li class="tg-facebook"><a href="javascript:void(0);"><i class="fa fa-facebook"></i></a></li>
+										<li class="tg-twitter"><a href="javascript:void(0);"><i class="fa fa-twitter"></i></a></li>
+										<li class="tg-linkedin"><a href="javascript:void(0);"><i class="fa fa-linkedin"></i></a></li>
+									</ul>
+								</div>
+							</div>
+							<div class="item tg-author">
+								<figure><a href="javascript:void(0);"><img src="/static/images/author/imag-04.jpg" alt="image description"></a></figure>
+								<div class="tg-authorcontent">
+									<h2><a href="javascript:void(0);">Book Burger</a></h2>
+									<span>20,257 Published Books</span>
+									<ul class="tg-socialicons">
+										<li class="tg-facebook"><a href="javascript:void(0);"><i class="fa fa-facebook"></i></a></li>
+										<li class="tg-twitter"><a href="javascript:void(0);"><i class="fa fa-twitter"></i></a></li>
+										<li class="tg-linkedin"><a href="javascript:void(0);"><i class="fa fa-linkedin"></i></a></li>
+									</ul>
+								</div>
+							</div>
+							<div class="item tg-author">
+								<figure><a href="javascript:void(0);"><img src="/static/images/author/imag-05.jpg" alt="image description"></a></figure>
+								<div class="tg-authorcontent">
+									<h2><a href="javascript:void(0);">Book Ship &amp; Co.</a></h2>
+									<span>15,686 Published Books</span>
+									<ul class="tg-socialicons">
+										<li class="tg-facebook"><a href="javascript:void(0);"><i class="fa fa-facebook"></i></a></li>
+										<li class="tg-twitter"><a href="javascript:void(0);"><i class="fa fa-twitter"></i></a></li>
+										<li class="tg-linkedin"><a href="javascript:void(0);"><i class="fa fa-linkedin"></i></a></li>
+									</ul>
+								</div>
+							</div>
+							<div class="item tg-author">
+								<figure><a href="javascript:void(0);"><img src="/static/images/author/imag-06.jpg" alt="image description"></a></figure>
+								<div class="tg-authorcontent">
+									<h2><a href="javascript:void(0);">Enoch Gallion</a></h2>
+									<span>12,435 Published Books</span>
+									<ul class="tg-socialicons">
+										<li class="tg-facebook"><a href="javascript:void(0);"><i class="fa fa-facebook"></i></a></li>
+										<li class="tg-twitter"><a href="javascript:void(0);"><i class="fa fa-twitter"></i></a></li>
+										<li class="tg-linkedin"><a href="javascript:void(0);"><i class="fa fa-linkedin"></i></a></li>
+									</ul>
+								</div>
+							</div>
+							<div class="item tg-author">
+								<figure><a href="javascript:void(0);"><img src="/static/images/author/imag-07.jpg" alt="image description"></a></figure>
+								<div class="tg-authorcontent">
+									<h2><a href="javascript:void(0);">Book House</a></h2>
+									<span>15,953 Published Books</span>
+									<ul class="tg-socialicons">
+										<li class="tg-facebook"><a href="javascript:void(0);"><i class="fa fa-facebook"></i></a></li>
+										<li class="tg-twitter"><a href="javascript:void(0);"><i class="fa fa-twitter"></i></a></li>
+										<li class="tg-linkedin"><a href="javascript:void(0);"><i class="fa fa-linkedin"></i></a></li>
+									</ul>
+								</div>
+							</div>
+							<div class="item tg-author">
+								<figure><a href="javascript:void(0);"><img src="/static/images/author/imag-08.jpg" alt="image description"></a></figure>
+								<div class="tg-authorcontent">
+									<h2><a href="javascript:void(0);">Linnie Klimek</a></h2>
+									<span>65,720 Published Books</span>
+									<ul class="tg-socialicons">
+										<li class="tg-facebook"><a href="javascript:void(0);"><i class="fa fa-facebook"></i></a></li>
+										<li class="tg-twitter"><a href="javascript:void(0);"><i class="fa fa-twitter"></i></a></li>
+										<li class="tg-linkedin"><a href="javascript:void(0);"><i class="fa fa-linkedin"></i></a></li>
+									</ul>
+								</div>
+							</div>
+							<div class="item tg-author">
+								<figure><a href="javascript:void(0);"><img src="/static/images/author/imag-05.jpg" alt="image description"></a></figure>
+								<div class="tg-authorcontent">
+									<h2><a href="javascript:void(0);">Book Ship &amp; Co.</a></h2>
+									<span>15,686 Published Books</span>
+									<ul class="tg-socialicons">
+										<li class="tg-facebook"><a href="javascript:void(0);"><i class="fa fa-facebook"></i></a></li>
+										<li class="tg-twitter"><a href="javascript:void(0);"><i class="fa fa-twitter"></i></a></li>
+										<li class="tg-linkedin"><a href="javascript:void(0);"><i class="fa fa-linkedin"></i></a></li>
+									</ul>
+								</div>
+							</div>
+							<div class="item tg-author">
+								<figure><a href="javascript:void(0);"><img src="/static/images/author/imag-06.jpg" alt="image description"></a></figure>
+								<div class="tg-authorcontent">
+									<h2><a href="javascript:void(0);">Enoch Gallion</a></h2>
+									<span>12,435 Published Books</span>
+									<ul class="tg-socialicons">
+										<li class="tg-facebook"><a href="javascript:void(0);"><i class="fa fa-facebook"></i></a></li>
+										<li class="tg-twitter"><a href="javascript:void(0);"><i class="fa fa-twitter"></i></a></li>
+										<li class="tg-linkedin"><a href="javascript:void(0);"><i class="fa fa-linkedin"></i></a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!--************************************
+					Authors End
+			*************************************-->
+		</main>
+		<!--************************************
+				Main End
+		*************************************-->
+		<!--************************************
+				Footer Start
+		*************************************-->
+		<%- include ./components/footer%>
+		<!--************************************
+				Footer End
+		*************************************-->
+	</div>
+	<!--************************************
+			Wrapper End
+	*************************************-->
+	<script src="/static/js/vendor/jquery-library.js"></script>
+	<script src="/static/js/vendor/bootstrap.min.js"></script>
+	<script src="/static/https://maps.google.com/maps/api/js?key=AIzaSyCR-KEWAVCn52mSdeVeTqZjtqbmVJyfSus&amp;language=en"></script>
+	<script src="/static/js/owl.carousel.min.js"></script>
+	<script src="/static/js/jquery.vide.min.js"></script>
+	<script src="/static/js/countdown.js"></script>
+	<script src="/static/js/jquery-ui.js"></script>
+	<script src="/static/js/parallax.js"></script>
+	<script src="/static/js/countTo.js"></script>
+	<script src="/static/js/appear.js"></script>
+	<script src="/static/js/gmap3.js"></script>
+	<script src="/static/js/main.js"></script>
+</body>
+
+<!-- Mirrored from exprostudio.com/html/book_library/ by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 28 Aug 2018 23:45:36 GMT -->
+
+</html>
